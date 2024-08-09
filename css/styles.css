@@ -1,0 +1,18 @@
+/* Выравниваем элементы по центру */
+.circle-dress-code {
+    display: flex;
+    justify-content: center; /* Выравниваем по центру по горизонтали */
+    align-items: center; /* Выравниваем по центру по вертикали */
+    gap: 20px; /* Задаем промежуток между кругами */
+    margin-bottom: 100px;
+  }
+  
+  /* Стиль для отдельных кругов */
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Делаем элемент кругом */
+    background-color: #ccc; /* Дефолтный цвет, можно изменять */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень для придания объема */
+  }
+  
