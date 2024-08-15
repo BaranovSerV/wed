@@ -16,14 +16,13 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/jquery.coundown.js"></script>
-  <link rel="icon" type="image/png" href="image/parrot.gif" />
+  <link rel="icon" type="image/png" href="image/photo_2024-08-11_11-07-12.jpg" />
 </head>
 
 <body>
   <!-- Begin Preloader -->
   <div class="preloader-wrapper">
     <div class="preloader">
-      <img src="image/parrot.gif" alt="Party Parrot Gif" />
     </div>
   </div>
   <!-- End Preloader-->
@@ -63,6 +62,11 @@
             <div class="navbar-item">
               <a class="navbar-item" href="#dresscode">
                 Dress Code
+              </a>
+            </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#accept">
+                Подтверждение
               </a>
             </div>
           </div>
@@ -107,7 +111,7 @@
             var month = now.getMonth() + 1;
             var year = now.getFullYear() + 1;
 
-            var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+            var nextyear = month + '/' + day + '/' + year + ' 00:00:00';
             var harih = '09/27/2024 17:00:00';
 
             $('#hitungmundur').countdown({
@@ -144,6 +148,9 @@
                 </li>
                 <li>
                   <a href="#dresscode">Dress Code</a>
+                <li>
+                  <a href="#accept">Подтверждение</a>
+                </li>
                 </li>
               </ul>
             </div>
@@ -168,7 +175,7 @@
         <br />
         Приглашаем вас разделить с нами радость особенного для нас
         <br />
-        события и стать частью нашей семейной истории, ваши
+        событияи стать частью нашей семейной истории, ваши
       </p>
       <div data-aos="fade-in" data-aos-easing="linear">
         <div class="nama-lengkap">
@@ -178,7 +185,6 @@
         <div class="nama-lengkap">
           Julia
         </div>
-        Пожалуйста, подтвердите свое присутствие до 20 сентября 2024
       </div>
     </div>
 
@@ -249,7 +255,7 @@
             class="button btn-arah" data-aos="fade-right">
             <i class="far fa-directions"></i>
             &nbsp;&nbsp;Показать на карте
-          </a>
+          </a>`
         </div>
       </div>
     </div>
@@ -262,14 +268,10 @@
       <div class="container">
         <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
           <div class="column is-12 prolog">
-            <h1 class="title has-text-centered section-title">Чат для ваших фотографий</h1>
+            <h1 class="title has-text-centered section-title">Детали</h1>
           </div>
           <div class="column is-12 prolog has-text-centered">
 
-            <a href="#" class="button btn-whatsapp" data-aos="fade-right">
-              <i class="fab fa-whatsapp"></i>
-              &nbsp;&nbsp;Telegram chat
-            </a>
           </div>
 
         </div>
@@ -286,12 +288,15 @@
         <div class="column is-12 prolog">
           <h1 class="title has-text-centered section-title">Dress Code</h1>
         </div>
+        <div class="style-box">
+          <h2 class="box-sml">style - Emerald</h2>
+        </div>
         <div class="circle-dress-code">
-          <div class="circle" style="background-color: 	#ffffff;"></div>
-          <div class="circle" style="background-color: #525f74;"></div>
-          <div class="circle" style="background-color: #ff8b7d;"></div>
+          <div class="circle" style="background-color: 	#808000;"></div>
+          <div class="circle" style="background-color: #1E5945;"></div>
+          <div class="circle" style="background-color: #9ACD32;"></div>
           <div class="circle" style="background-color: #559893;"></div>
-          <div class="circle" style="background-color: #7f828d;"></div>
+          <div class="circle" style="background-color: #3BB08F;"></div>
         </div>
         <div class="columns">
           <!-- Содержимое секции -->
@@ -299,10 +304,26 @@
       </div>
     </div>
 
-    <!-- End Tentang Sherly dan Daeng -->
+    <div class="section-dark contact" id="accept">
+      <div class="container">
+        <div class="columns is-multiline" data-aos="fade-in-up" data-aos-easing="linear">
+          <div class="column is-12 prolog">
+            <h1 class="title has-text-centered section-title">Подтверждение присутствия</h1>
+          </div>
+          <div class="column is-12 prolog has-text-centered">
+            <div class="date-form">
+              <p id="text-to-date" class="bodytext" data-aos="fade-in" data-aos-easing="linear">
+                Пожалуйста, подтвердите свое присутствие до 20 сентября 2024
+              </p>
+              <a href="https://docs.google.com/forms/d/1QqYiRCbgMipgUoKFC20LM23xFt0Jz57uB3ikoM4FNpc/edit">
+                <button class="form-date">Подтвердить</button>
+              </a>
+            </div>
+          </div>
 
-    <!-- Begin RSVP Content -->
-    <!-- End RSVP Content -->
+        </div>
+      </div>
+    </div>
   </div>
   <!-- End Main Content -->
 
@@ -311,6 +332,7 @@
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menikah.js"></script>
+  <script src="js/script.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
