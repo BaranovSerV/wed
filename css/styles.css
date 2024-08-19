@@ -21,10 +21,10 @@
   
   /* Применение анимации к каждому кружку */
   .circle {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%; /* Делаем элемент кругом */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легкая тень для придания объема */
+    box-shadow: 0 4px 8px rgba(165, 136, 136, 0.3);  /*Легкая тень для придания объема */
     opacity: 0; /* Начальное состояние: кружки невидимы */
     animation: slide-in 1s forwards;
   }
@@ -70,9 +70,7 @@
 .style-box{
     text-align: center;
     font-size: 5rem;
-    font-family: 'Rouge Script', sans-serif;
-    color: #996E6D;
-    line-height: 5rem;
+    font-family: "Raleway", sans-serif;
     margin-bottom: 40px;
 }
 
@@ -101,4 +99,36 @@
 
 .section-dark{
     overflow: hidden;
+}
+
+.form-place{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 55px;
+    background-color: #996E6D;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    border-left: 1px solid #996E6D;
+    border-right: 1px solid #996E6D;
+    border-top: 1px solid #996E6D;
+    border-bottom: 1px solid #996E6D;
+    margin-bottom: 40px;
+}
+
+.form-place:active{
+    background-color: #403330;
+}
+
+
+#details-text{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+}
+
+.names{
+  margin-bottom: 40px;
 }
