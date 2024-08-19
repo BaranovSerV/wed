@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comforter+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&display=swap');
 .has-vertically-aligned-content {
   display: flex;
   flex-direction: column;
@@ -51,12 +52,15 @@ html {
 
 
 .hero .title {
-  font-family: 'Rouge Script', sans-serif;
-  font-weight: 700;
-  transform: rotate(-2deg);
-  font-size: 5rem;
+  font-family: "Cormorant+Garamond", serif;
+  font-style: normal;  
+  font-weight: 300;
+  /*transform: rotate(-2deg);*/
+  font-size: 3.5rem;
   padding-bottom: 5px;
   color: whitesmoke;
+  line-height: 3.7rem;
+  
 }
 
 .hero .subtitle {
@@ -292,23 +296,33 @@ html {
   font-weight: 900;
   color: #996E6D;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 0px;
   padding-bottom: 60px;
 }
 
+.alfa-text{
+  font-family: 'Cormorant Garamond', static;
+  font-size: 3rem;
+  font-weight: 200;
+  letter-spacing: 0px;
+  margin-bottom: 30px;
+  line-height: 3.7rem;
+}
+
 .nama-lengkap {
-  font-family: 'Rouge Script', sans-serif;
+  font-family: 'Cormorant Garamond', sans-serif;
   color: #996E6D;
   font-size: 3.5rem;
   letter-spacing: 0px;
+  margin-top: 10px;
   padding-bottom: 6px;
   line-height: 3.7rem;
 }
 
 .ampersand {
 font-size: 5rem;
-font-family: 'Rouge Script', sans-serif;
+font-family: 'Cormorant Garamond', sans-serif;
 color: #996E6D;
 line-height: 5rem;
 display: inline-block;
@@ -316,7 +330,7 @@ vertical-align: middle;
 }
 
 .bodytext {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .waktu {
@@ -574,10 +588,4 @@ body.preloader-site {
 
 
 
-.section-light {
-  /*background-image: url(../image/divider-flowers-leaves.png); */
-  background-position: bottom -30px center;
-  background-repeat: no-repeat;
-  background-size: initial;
-}
 
