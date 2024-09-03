@@ -20,35 +20,44 @@
   }
   
   /* Применение анимации к каждому кружку */
-  .circle {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%; /* Делаем элемент кругом */
-    box-shadow: 0 4px 8px rgba(165, 136, 136, 0.3);  /*Легкая тень для придания объема */
-    opacity: 0; /* Начальное состояние: кружки невидимы */
-    animation: slide-in 1s forwards;
-  }
-  
-  /* Задержка анимации для каждого кружка */
-  .circle:nth-child(1) {
-    animation-delay: 0.2s;
-  }
-  
-  .circle:nth-child(2) {
-    animation-delay: 0.4s;
-  }
-  
-  .circle:nth-child(3) {
-    animation-delay: 0.6s;
-  }
-  
-  .circle:nth-child(4) {
-    animation-delay: 0.8s;
-  }
-  
-  .circle:nth-child(5) {
-    animation-delay: 1s;
-  }
+/* Начальное состояние кружков */
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(165, 136, 136, 0.3);
+  opacity: 0;
+  transform: translateX(-100vw); /* Начальное состояние: за пределами экрана */
+  transition: transform 1s, opacity 1s; /* Добавляем плавный переход */
+}
+
+/* Анимация при добавлении класса */
+.circle.animate {
+  opacity: 1;
+  transform: translateX(0); /* Конечное состояние: в центре экрана */
+}
+
+/* Задержка анимации для каждого кружка */
+.circle:nth-child(1).animate {
+  transition-delay: 0.2s;
+}
+
+.circle:nth-child(2).animate {
+  transition-delay: 0.4s;
+}
+
+.circle:nth-child(3).animate {
+  transition-delay: 0.6s;
+}
+
+.circle:nth-child(4).animate {
+  transition-delay: 0.8s;
+}
+
+.circle:nth-child(5).animate {
+  transition-delay: 1s;
+}
+
   
   
 
@@ -136,4 +145,12 @@
 #date-centre{
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#itr{
+  width: 100%;
+}
+
+.date{
+  margin-bottom: 30px;
 }
