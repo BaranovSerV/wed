@@ -14,8 +14,9 @@
 
   <title>Свадьба Георигия и Юлии</title>
   <!-- Bulma Version 0.8.x-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/menikah.css" />
   <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
   <script src="https://kit.fontawesome.com/2828f7885a.js"
@@ -71,6 +72,11 @@
                 Подтверждение
               </a>
             </div>
+            <div class="navbar-item">
+              <a class="navbar-item" href="#kontact">
+                Контакты
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -120,15 +126,13 @@
             var year = now.getFullYear() + 1;
 
             var nextyear = month + '/' + day + '/' + year + ' 00:00:00';
-            var harih = '09/27/2024 17:00:00';
+            var harih = '09/27/2024 15:30:00';
 
             $('#hitungmundur').countdown({
               date: harih, // TODO Date format: 09/27/2024 17:00:00
-              offset: +2, // TODO Your Timezone Offset
+              offset: +3, // TODO Your Timezone Offset
               day: 'Day',
               days: 'Days'
-            }, function () {
-              alert('Done!');
             });
           </script>
         </div>
@@ -156,6 +160,9 @@
                 </li>
                 <li>
                   <a href="#accept">Подтверждение</a>
+                </li>
+                <li>
+                  <a href="#kontact">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -303,7 +310,41 @@
         </div>
       </div>
     </div>
+
+    <div class="section-dark contact" id="kontact">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-12 prolog">
+            <h1 class="title has-text-centered section-title">Контакты</h1>
+          </div>
+          <div class="column is-12 prolog has-text-centered">
+            <div class="kanal">
+              <p id="textkanal" class="bodytext">
+                Если Вы хотите подготовить для нас сюрприз, сообщите, пожалуйста, нашей прекрасной ведущей
+                <i>Елене</i>.
+              </p>
+            </div>
+            <div class="kanal">
+              <p id="textkanal" class="bodytext">
+                Телефон: +7(966)193-88-38
+              </p>
+            </div>
+          </div>
+          <div id="telega" class="kanal">
+            <!--<strong class="waktu is-larger has-text-centered">Цветочна подписка</strong>-->
+            <p class="bodytext">
+              Свадебный чат:
+            </p>
+            <a class="link" href="https://t.me/+S27w--Hg1hhiOTEy">
+              <i class='bx bxl-telegram'></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
   <!-- End Main Content -->
 
   <!-- Begin Footer -->
@@ -311,7 +352,7 @@
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menikah.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script>
