@@ -147,10 +147,43 @@
   margin-bottom: 50px;
 }
 
+
 #itr{
   width: 100%;
 }
 
 .date{
   margin-bottom: 30px;
+}
+
+.kanal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.link{
+  justify-content: center;
+  align-items: center;
+}
+
+.bxl-telegram{
+  font-size: 24px;
+  transition: transform 0.3s;
+  color: #0088cc;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.bxl-telegram:active{
+  color: black;
+}
+
+#textkanal{
+  width: 600px;
+}
+#telega{
+  margin-top: 20px;
 }
